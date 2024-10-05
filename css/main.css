@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Ubuntu:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Ubuntu:wght@300;500;700&display=swap");
+.btn-master, .btn-download, .btn-downloadCtn, .login-button, .sign-up-button, .btn-card {
+  padding: 10px 30px;
+  border: 0px;
+  border-radius: 50px;
+}
+
+.btn-download, .btn-downloadCtn {
+  background-color: #082032;
+  color: #fff;
+  margin: 5% 3% 5% 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.btn-download:hover, .btn-downloadCtn:hover {
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+  color: #9d9696;
+}
+
+.btn-downloadCtn {
+  margin: 2% 2% 2% 2%;
+}
+
+.login-button {
+  background-color: #ffd24c;
+  color: #fff;
+  padding: 1rem 2rem 1rem 2rem;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.login-button:hover {
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #9d9696;
+}
+
+.sign-up-button {
+  background-color: #ffd24c;
+  color: #fff;
+  padding: 1rem 2rem 1rem 2rem;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.sign-up-button:hover {
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+  color: #9d9696;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-card {
+  width: 250px;
+  background-color: blanchedalmond;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  color: #082032;
+}
+
+.btn-card:hover {
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+  color: #9d9696;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#title {
+  background-color: #e7dec8;
+  font-family: "Montserrat", sans-serif;
+}
+
+#title div {
+  margin-left: 0;
+}
+
+#title h1 {
+  color: #30475e;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#title .container-fluid {
+  padding: 3% 15%;
+}
+
+#title .navbar {
+  padding-bottom: 9rem;
+}
+
+#title .navbar .navAlign {
+  padding-left: 7px;
+}
+
+#title .navbar .navContent {
+  font-size: 20px;
+}
+
+#title .navbar-brand {
+  position: absolute;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 0px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+}
+
+#title .navbar-brand img {
+  position: absolute;
+  top: 3px;
+  left: -47px;
+  padding: 5px;
+  height: 50px;
+  width: auto;
+}
+
+#title .nav-item {
+  padding: 0 1rem 0 1rem;
+}
+
+#title .header-image {
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  width: 25% !important;
+  position: absolute;
+}
+
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#features h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#features p {
+  color: #8f8f8f;
+}
+
+#features .fa-solid {
+  margin-bottom: 1rem;
+  color: #d89216;
+}
+
+#features .fa-solid:hover {
+  color: #a16d13;
+}
+
+#features .cardBox {
+  padding: 6% 4% 6% 4%;
+  text-align: center;
+}
+
+#loginModal {
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+#loginModal h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  padding-top: 10px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2.5;
+}
+
+#loginModal .input {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#loginModal .input .fas {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+#loginModal .input input {
+  padding: 8px 10px;
+  padding-left: 40px;
+  width: 100%;
+  margin: 5px 0;
+  color: #2d4263;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  font-size: 16px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+#loginModal .input input[type="submit"] {
+  background: #fff;
+  color: #111;
+  max-width: 100%;
+  padding: 8px 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+#loginModal .input input[type="submit"]:hover {
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#loginModal .input span {
+  position: absolute;
+  left: 40px;
+  top: 14px;
+  display: inline-block;
+  color: #2d4263;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+#loginModal .input input:focus ~ span,
+#loginModal .input input:valid ~ span {
+  -webkit-transform: translateX(-30px) translateY(-25px);
+          transform: translateX(-30px) translateY(-25px);
+  font-size: 12px;
+}
+
+#loginModal p {
+  color: #2d4263;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+#loginModal a {
+  color: #8f8f8f;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+#loginModal a:hover {
+  background-color: #000;
+  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#loginModal .modal-content {
+  background-color: #e7dec8;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  left: 190%;
+}
+
+#loginModal .modal-dialog {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#testimonials {
+  text-align: center;
+  background-color: #ffd24c;
+  color: #fff;
+}
+
+#testimonials h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#testimonials .carousel-item {
+  padding: 7% 15%;
+}
+
+#testimonials .testi-img {
+  width: 15%;
+  height: 15%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ffd24c;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+#press .press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+#profile {
+  padding: 100px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+#profile h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#profile h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+#profile .cardGang {
+  padding: 3% 2%;
+}
+
+#profile .card-body {
+  padding: 2% 2% 2% 2%;
+  top: 10px;
+}
+
+#profile .card-img-top {
+  width: 100%;
+  height: 100%;
+}
+
+#download {
+  text-align: center;
+  padding: 2% 3% 2% 3%;
+}
+
+#download h1 {
+  line-height: 1.5;
+}
+
+#contacts {
+  margin: 2% 2% 2% 2%;
+  text-align: center;
+}
+
+#contacts h2 {
+  line-height: 1.5;
+}
+
+#contacts .social-icons {
+  padding: 0;
+  margin: 0%;
+  list-style: none;
+}
+
+#contacts .social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+
+#contacts .social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  -webkit-transition: all 265ms ease-out;
+  transition: all 265ms ease-out;
+}
+
+#contacts .social-icons a {
+  display: inline-block;
+}
+
+#contacts .social-icons a::before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  -webkit-transition: all 265ms ease-out;
+  transition: all 265ms ease-out;
+}
+
+#contacts .social-icons a:hover::before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 265ms ease-in;
+  transition: all 265ms ease-in;
+}
+
+#contacts .social-icons a:hover i {
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  color: #fff;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 265ms ease-in;
+  transition: all 265ms ease-in;
+}
+/*# sourceMappingURL=main.css.map */

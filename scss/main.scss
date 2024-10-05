@@ -1,0 +1,335 @@
+@import "colors";
+@import "fonts";
+@import "buttons";
+
+body {
+  overflow-x: hidden;
+}
+
+#title {
+  background-color: $sectionColor1;
+  font-family: $montserrat;
+  div {
+    margin-left: 0;
+  }
+
+  h1 {
+    color: $headingTextColor;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-family: $montserrat;
+    font-weight: map-get($font-weight, bold);
+  }
+
+  .container-fluid {
+    padding: 3% 15%;
+  }
+
+  .navbar {
+    padding-bottom: 9rem;
+
+    .navAlign {
+      padding-left: 7px;
+    }
+    .navContent {
+      font-size: 20px;
+    }
+  }
+
+  .navbar-brand {
+    position: absolute;
+    font-family: $ubuntu;
+    font-weight: map-get($font-weight, bold);
+    font-size: 2.5rem;
+    padding: 0px;
+    transform: translateX(-50%);
+    left: 50%;
+
+    img {
+      position: absolute;
+      top: 3px;
+      left: -47px;
+      padding: 5px;
+      height: 50px;
+      width: auto;
+    }
+  }
+
+  .nav-item {
+    padding: 0 1rem 0 1rem;
+  }
+
+  .header-image {
+    transform: rotate(25deg);
+    width: 25% !important;
+    position: absolute;
+  }
+}
+
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  h3 {
+    font-family: $montserrat;
+    font-weight: map-get($font-weight, bold);
+  }
+
+  p {
+    color: $subtitle;
+  }
+
+  .fa-solid {
+    margin-bottom: 1rem;
+    color: $iconColor;
+  }
+
+  .fa-solid:hover {
+    color: $iconHover;
+  }
+
+  .cardBox {
+    padding: 6% 4% 6% 4%;
+    text-align: center;
+  }
+}
+
+#loginModal {
+  margin: auto;
+  font-family: $montserrat;
+  h4 {
+    font-family: $ubuntu;
+    font-weight: map-get($font-weight, bold);
+    padding-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5;
+  }
+  .input {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+    .fas {
+      position: absolute;
+      left: 15px;
+      top: 18px;
+    }
+
+    input {
+      padding: 8px 10px;
+      padding-left: 40px;
+      width: 100%;
+      margin: 5px 0;
+      color: $sectionColor2;
+      outline: none;
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      font-size: 16px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    input[type="submit"] {
+      background: #fff;
+      color: #111;
+      max-width: 100%;
+      padding: 8px 10px;
+      box-shadow: none;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: 1.5s;
+    }
+
+    input[type="submit"]:hover {
+      background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+      color: #fff;
+      transition: 0.5s;
+    }
+
+    span {
+      position: absolute;
+      left: 40px;
+      top: 14px;
+      display: inline-block;
+      color: $sectionColor2;
+      transition: 0.5s;
+      pointer-events: none;
+    }
+    input:focus ~ span,
+    input:valid ~ span {
+      transform: translateX(-30px) translateY(-25px);
+      font-size: 12px;
+    }
+  }
+  p {
+    color: $sectionColor2;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  a {
+    color: $subtitle;
+    font-family: $montserrat;
+    font-weight: map-get($font-weight, medium);
+  }
+
+  a:hover {
+    background-color: #000;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .modal-content {
+    background-color: $sectionColor1;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    left: 190%;
+  }
+  .modal-dialog {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+#testimonials {
+  text-align: center;
+  background-color: $login-signupBtn;
+  color: $textColor;
+
+  h2 {
+    font-family: $montserrat;
+    font-weight: map-get($font-weight, bold);
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  .carousel-item {
+    padding: 7% 15%;
+  }
+  .testi-img {
+    width: 15%;
+    height: 15%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+}
+
+#press {
+  background-color: $login-signupBtn;
+  text-align: center;
+  padding-bottom: 3%;
+
+  .press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+  }
+}
+
+#profile {
+  padding: 100px;
+  text-align: center;
+  font-family: $montserrat;
+  font-weight: map-get($font-weight, light);
+
+  h1 {
+    font-family: $montserrat;
+    font-weight: map-get($font-weight, bold);
+  }
+
+  h3 {
+    font-family: $ubuntu;
+    font-weight: map-get($font-weight, medium);
+  }
+  .cardGang {
+    padding: 3% 2%;
+  }
+
+  .card-body {
+    padding: 2% 2% 2% 2%;
+    top: 10px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#download {
+  text-align: center;
+  padding: 2% 3% 2% 3%;
+
+  h1 {
+    line-height: 1.5;
+  }
+}
+
+#contacts {
+  margin: 2% 2% 2% 2%;
+  text-align: center;
+
+  h2 {
+    line-height: 1.5;
+  }
+  .social-icons {
+    padding: 0;
+    margin: 0%;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 0.15em;
+      position: relative;
+      font-size: 1.2em;
+    }
+
+    i {
+      color: #fff;
+      position: absolute;
+      top: 21px;
+      left: 21px;
+      transition: all 265ms ease-out;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    a::before {
+      transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      content: "";
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      display: block;
+      background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+      transition: all 265ms ease-out;
+    }
+
+    a:hover::before {
+      transform: scale(0);
+      transition: all 265ms ease-in;
+    }
+
+    a:hover {
+      i {
+        transform: scale(2);
+        -ms-transform: scale(2);
+        -webkit-transform: scale(2);
+        color: #fff;
+        background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 265ms ease-in;
+      }
+    }
+  }
+}

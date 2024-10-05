@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>MiCat</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="images/black-cat.png" />
+
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#title">
+        <img src="images/black-cat.png" alt="cat-icon" />
+        <span> MiCat </span>
+      </a>
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto navContent">
+            <li class="nav-item navAlign">
+              <a class="nav-link" href="#download">Download</a>
+            </li>
+            <li class="nav-item navAlign">
+              <a class="nav-link" href="#profile">The Gang</a>
+            </li>
+            <li class="nav-item navAlign">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <button type="button" class="login-button" data-bs-toggle="modal"
+                data-bs-target="#loginModal">Login</button>
+            </li>
+            <li class="nav-item">
+              <button class="sign-up-button">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Experience with the fluffiest master of all cat.</h1>
+          <button class="btn-download" type="button"><i class="fa-brands fa-apple"></i> Download</button>
+          <button class="btn-download" type="button"><i class="fa-brands fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6 imgPos">
+          <img class="header-image" src="images/catIphone2.svg" alt="iphone-mockup" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login  -->
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h4>Login To MiCat</h4>
+          <form action="">
+            <div class="input">
+              <input type="text" required />
+              <span>Username</span>
+              <i class="fas fa-solid fa-user"></i>
+            </div>
+            <div class="input password">
+              <input type="password" id="password-input" name="password" required="requried" />
+              <span>Password</span>
+              <i class="fas fa-solid fa-key"></i>
+            </div>
+            <div class="input" id="loginBtn">
+              <input type="submit" value="Log in" disabled />
+            </div>
+          </form>
+          <p>Forgot password? <a href="#">Click Here</a></p>
+          <p>Don't have an account <a href="#">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="col-lg-4 cardBox">
+        <i class="fa-solid fa-shield-cat fa-5x"></i>
+        <h3>Take Human Territory.</h3>
+        <p>Where the Territory you wanna take? hire one of us.</p>
+      </div>
+      <div class="col-lg-4 cardBox">
+        <i class="fa-solid fa-cat fa-5x"></i>
+        <h3>Elite and Gentle cats.</h3>
+        <p>Our cats is professional.</p>
+      </div>
+      <div class="col-lg-4 cardBox">
+        <i class="fa-solid fa-ban fa-5x"></i>
+        <h3>We are not Pets.</h3>
+        <p>If u tryin to pet us, ur gonna be the pet, not the cat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>This place such been addiction. for the female cat whom search for handsome cat. meow</h2>
+          <img class="testi-img" src="images/black-cat-pedicure.gif" alt="oyen-profile" />
+          <em>Garong, Depok</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Hmm, I think my doge coins will be useles in this site. Would be the next crypto
+            is meowcoin? no one knows.</h2>
+          <img class="testi-img" src="images/maselon.gif" alt="elon-profile" />
+          <em>Elon, the doge master.</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Mwheheh, time for search for an worthy opponent!. FYI this place such been an
+            interesting for cat looking for a job.</h2>
+          <img class="testi-img" src="images/cat-orange.gif" alt="greedy-profile" />
+          <em>Jeje, Citayem.</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Brand Logo -->
+
+  <section id="press">
+    <img class="press-logo" src="https://icatcare.org/app/themes/icc/assets/images/icc_logo.png" alt="tc-logo" />
+    <img class="press-logo" src="https://www.petfinder.com/themes/custom/consumer_react/logo.svg" alt="tnw-logo" />
+    <img class="press-logo" src="https://mykitten.in/wp-content/uploads/2021/10/My-kittens-1.webp"
+      alt="mykitten-logo" />
+    <img class="press-logo" src="https://cdn.shopify.com/s/files/1/0569/0526/9388/files/rsz_1__2_125x.png?v=1648450936"
+      alt="mashable-logo" />
+  </section>
+
+  <!-- Profile List -->
+
+  <section id="profile">
+    <h1>Meet our meow gang.</h1>
+    <p>Not so expensive to take a Territory, or u just wanna hang with us.</p>
+    <h4>DISCLAIMER! NOT FOR FREE!</h4>
+
+    <div class="row">
+      <div class="cardGang col-lg-4 col-md-6">
+        <div class="card">
+          <img src="images/black-cat-laptop.gif" class="card-img-top" />
+          <div class="card-body">
+            <h3>Garong</h3>
+            <h4>Free</h4>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <p class="card-text">He's called the developer cat, because he just looking for an error nowadays.</p>
+            <button class="btn-card" type="button">Meet Him</button>
+          </div>
+        </div>
+      </div>
+      <div class="cardGang col-lg-4 col-md-6">
+        <div class="card">
+          <img src="images/bored-cat.gif" class="card-img-top" />
+          <div class="card-body">
+            <h3>Pepeng</h3>
+            <h4>$49 / mo</h4>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <p>Just an Ordinary pepeng, just bored. But he's fun to other people. But not to rats.</p>
+            <button class="btn-card" type="button">Meet Him</button>
+          </div>
+        </div>
+      </div>
+      <div class="cardGang col-lg-4 col-md-6">
+        <div class="card">
+          <img src="images/lazy-cat.gif" class="card-img-top" />
+          <div class="card-body">
+            <h3>Ucok</h3>
+            <h4>$99 / mo</h4>
+            <p>The Master</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited App Usage</p>
+            <p>Just not like other dude, he's lazy. But if u looking for a rat or cat hunter, he's the perfect.</p>
+            <button class="btn-card" type="button">Hire Him</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="download">
+    <h3>Wanna Scratch something? the perfect solution is us.</h3>
+    <h1>Download The App!</h1>
+    <button class="btn-downloadCtn" type="button"><i class="fa-brands fa-apple"></i> Download</button>
+    <button class="btn-downloadCtn" type="button"><i class="fa-brands fa-google-play"></i> Download</button>
+  </section>
+
+  <section id="contacts">
+    <h2>Contact Us!</h2>
+    <ul class="social-icons">
+      <li>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <p>© Copyright MiCat</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

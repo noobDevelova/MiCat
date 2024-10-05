@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+.btn-master, .btn-download {
+  padding: 10px 30px;
+  border: 0px;
+  border-radius: 50px;
+}
+
+.btn-download {
+  background-color: #082032;
+  color: #fff;
+  margin: 5% 3% 5% 0;
+}
+
+.btn-download:hover {
+  background-color: #041c32;
+  color: #9d9696;
+}
+/*# sourceMappingURL=buttons.css.map */

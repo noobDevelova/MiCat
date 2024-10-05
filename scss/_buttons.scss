@@ -1,0 +1,67 @@
+@import "colors";
+@import "fonts";
+
+.btn-master {
+  padding: 10px 30px;
+  border: 0px;
+  border-radius: 50px;
+}
+
+.btn-download {
+  @extend .btn-master;
+  background-color: $button;
+  color: $textColor;
+  margin: 5% 3% 5% 0;
+  font-family: $ubuntu;
+
+  &:hover {
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+    color: $textColorHover;
+  }
+}
+
+.btn-downloadCtn {
+  @extend .btn-download;
+  margin: 2% 2% 2% 2%;
+}
+
+.login-button {
+  @extend .btn-master;
+  background-color: $login-signupBtn;
+  color: $textColor;
+  padding: 1rem 2rem 1rem 2rem;
+  transition: 1.5s;
+
+  &:hover {
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+    transition: 0.5s;
+    color: $textColorHover;
+  }
+}
+.sign-up-button {
+  @extend .btn-master;
+  background-color: $login-signupBtn;
+  color: $textColor;
+  padding: 1rem 2rem 1rem 2rem;
+  transition: 1.5s;
+
+  &:hover {
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+    color: $textColorHover;
+    transition: 0.5s;
+  }
+}
+
+.btn-card {
+  @extend .btn-master;
+  width: 250px;
+  background-color: blanchedalmond;
+  transition: 1.5s;
+  color: $button;
+
+  &:hover {
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+    color: $textColorHover;
+    transition: 0.5s;
+  }
+}
